@@ -30,8 +30,7 @@ promise
   })
 
 function updateDOM(data) {
-  const div = document.createElement('div')
-  div.classList.add('images-wrapper')
+  const div = CreateComponent('div', {class: 'images-wrapper'})
   data.map(item => {
     const image = new Image()
     image.src = item.urls.small
